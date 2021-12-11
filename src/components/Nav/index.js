@@ -1,6 +1,6 @@
 import React from 'react';
 
-function Nav() {
+function Nav({currentPage, setCurrentPage}) {
     return (
     <header>
         <h2 class="name">
@@ -11,22 +11,30 @@ function Nav() {
         <nav>
             <ul>
                 <li>
-                    <a href="#href">
+                    <a 
+                    href="#href" 
+                    onClick={() => setCurrentPage('About')}>
                         About Me
                     </a>
                 </li>
                 <li>
-                    <a href="#portfolio">
+                    <a 
+                    href="#portfolio" 
+                    onClick={() => setCurrentPage('Portfolio')}>
                         Portfolio
                     </a>
                 </li>
                 <li>
-                    <a href="#contact">
+                    <a 
+                    href="#contact"
+                    onClick={() => setCurrentPage('Contact')}>
                         Contact
                     </a>
                 </li>
                 <li>
-                    <a href="#resume">
+                    <a 
+                    href="#resume"
+                    onClick={() => setCurrentPage('Resume')}>
                         Resume
                     </a>
                 </li>

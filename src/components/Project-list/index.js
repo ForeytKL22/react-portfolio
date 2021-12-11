@@ -1,7 +1,4 @@
-import React from 'react';
-
-const PortfolioList = () => {
-    const [projects] = useState([
+    const projects = [
         {
             name: 'AZ and UT National Park Camping',
             link: 'https://foreytkl22.github.io/NPS-Camping/',
@@ -32,19 +29,17 @@ const PortfolioList = () => {
             link: 'https://shrouded-coast-07063.herokuapp.com/',
             github: 'https://github.com/ForeytKL22/budget-tracker'
         }
-    ]);
+    ];
 
+    // return (
+    //     <div>
+    //         <img
+    //             src={require(`../../assets/portfolio-photos/portfolio-1.PNG`).default}
+    //             alt={projects.name}
+    //             key={projects.name}
+    //         />
+    //     </div>
 
-    return (
-        <div>
-            <img
-                src={require(`../../assets/portfolio-photos/portfolio-1.PNG`).default}
-                alt={projects.name}
-                key={projects.name}
-            />
-        </div>
+    // );
 
-    );
-}
-
-export default PortfolioList;
+    export default projects;
