@@ -2,6 +2,7 @@ import React, {useState} from 'react';
 import { validateEmail } from '../../utils/helpers';
 import Form from 'react-bootstrap/Form';
 import Container from 'react-bootstrap/Container'; 
+import Button from 'react-bootstrap/Button';
 
 function ContactForm() {
 
@@ -39,19 +40,27 @@ function ContactForm() {
 
     return (
         <Container>
-        <Form>
+        <Form id="contact-form" onSubmit={handleSubmit}>
+            <br/>
             <Form.Group className="mb-3" controlId="exampleForm.ControlInput1">
                 <Form.Label>Name:</Form.Label>
-                <Form.Control type="text" name="name" defaultValue={name} onBlue={handleChange}></Form.Control>
+                <Form.Control type="text" name="name" defaultValue={name} onBlur={handleChange}></Form.Control>
             </Form.Group>
             <Form.Group className="mb-3" controlId="exampleForm.ControlInput1">
                 <Form.Label>Email:</Form.Label>
-                <Form.Control type="text" name="name" placeholder="email@example.com" defaultValue={email} onBlue={handleChange}></Form.Control>
+                <Form.Control type="text" name="name" placeholder="email@example.com" defaultValue={email} onBlur={handleChange}></Form.Control>
             </Form.Group>
             <Form.Group>
                 <Form.Label>Message:</Form.Label>
-                <Form.Control name="message" as="textarea" rows={3} defaultValue={message} onBlue={handleChange} />
+                <Form.Control name="message" as="textarea" rows={3} defaultValue={message} onBlur={handleChange} />
             </Form.Group>
+            <br/>
+                {errorMessage && (
+                <div>
+                    <p className="error-text">{errorMessage}</p>
+                </div>
+                )}
+            <Button variant="secondary">Submit</Button>
         </Form>
         </Container>
 

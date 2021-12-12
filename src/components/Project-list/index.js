@@ -31,15 +31,4 @@
         }
     ];
 
-    // return (
-    //     <div>
-    //         <img
-    //             src={require(`../../assets/portfolio-photos/portfolio-1.PNG`).default}
-    //             alt={projects.name}
-    //             key={projects.name}
-    //         />
-    //     </div>
-
-    // );
-
     export default projects;
