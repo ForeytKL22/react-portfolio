@@ -1,10 +1,11 @@
 import React from 'react';
 import './style.css';
+import Container from 'react-bootstrap/Container';
 
 
 function About() {
     return (
-        <div>
+        <Container>
           <h1>About Me</h1>
           <p>
           Nunc pharetra finibus est at efficitur. Praesent sed congue diam. Integer gravida dui mauris,
@@ -13,7 +14,7 @@ function About() {
             imperdiet. Praesent euismod mi justo, faucibus scelerisque risus cursus in. Sed rhoncus mollis
             diam, sit amet facilisis lectus blandit at.
           </p>
-        </div>
+        </Container>
     );
 }
 

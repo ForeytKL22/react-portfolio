@@ -7,14 +7,9 @@ import Card from 'react-bootstrap/Card';
 
 
 function Portfolio() {
-    // PortfolioList.map(items => {
-    //     const {name, link, github} = items
-    //     console.log(name, link, github)
-    // });
 
     return (
         <div>
-            
         {
             PortfolioList.map((items, i) => (
                 <div>

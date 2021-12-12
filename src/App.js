@@ -1,9 +1,10 @@
 import React, { useState } from 'react';
 import './App.css';
 import About from './components/About';
-import Nav from './components/Nav';
+import Navigate from './components/Nav';
 import Contact from './components/Contact';
 import Portfolio from './components/Portfolio';
+
 
 
 function App() {
@@ -24,20 +25,15 @@ function App() {
 
   return (
     <div>
-      <Nav 
+      <Navigate 
         currentPage={currentPage} 
         setCurrentPage={setCurrentPage}
       />
       <main>
-        {/* <About></About>
-        <Contact></Contact>
-        <Portfolio></Portfolio> */}
-
         {
           // Render the component returned by 'renderPage()'
           renderPage(currentPage)
         }
-
       </main>
     </div>
   );

@@ -1,14 +1,29 @@
 import React from 'react';
+import './style.css';
+import {Navbar} from 'react-bootstrap';
+import {Container} from 'react-bootstrap';
+import {Nav} from 'react-bootstrap';
 
-function Nav({currentPage, setCurrentPage}) {
+
+function Navigate({currentPage, setCurrentPage}) {
     return (
     <header>
-        <h2 class="name">
-            <a href="/">
-                Kristin
-            </a>
-        </h2>
-        <nav>
+
+
+        <Navbar bg="dark" variant="dark">
+            <Container>
+            <Navbar.Brand href="#home">Kristin</Navbar.Brand>
+            <Nav className="me-auto">
+                <Nav.Link href="#about" onClick={() => setCurrentPage('About')}>About Me</Nav.Link>
+                <Nav.Link href="#portfolio" onClick={() => setCurrentPage('Portfolio')}>Portfolio</Nav.Link>
+                <Nav.Link href="#contact" onClick={() => setCurrentPage('Contact')}>Contact</Nav.Link>
+                <Nav.Link href="#resume" onClick={() => setCurrentPage('Resume')}>Resume</Nav.Link>
+            </Nav>
+            </Container>
+        </Navbar>
+
+
+        {/* <nav class="nav-links">
             <ul>
                 <li>
                     <a 
@@ -39,10 +54,11 @@ function Nav({currentPage, setCurrentPage}) {
                     </a>
                 </li>
             </ul>
-        </nav>
+        </nav> */}
+
     </header>
     );
 }
 
 
-export default Nav;
+export default Navigate;
