@@ -8,53 +8,20 @@ import {Nav} from 'react-bootstrap';
 function Navigate({currentPage, setCurrentPage}) {
     return (
     <header>
-
-
-        <Navbar bg="dark" variant="dark">
+        <Navbar bg="dark" variant="dark" class="navbar" collapseOnSelect expand="lg">
             <Container>
             <Navbar.Brand href="#home">Kristin</Navbar.Brand>
+            <Navbar.Toggle aria-controls="responsive-navbar-nav" />
+            <Navbar.Collapse id="responsive-navbar-nav">
             <Nav className="me-auto">
                 <Nav.Link href="#about" onClick={() => setCurrentPage('About')}>About Me</Nav.Link>
                 <Nav.Link href="#portfolio" onClick={() => setCurrentPage('Portfolio')}>Portfolio</Nav.Link>
                 <Nav.Link href="#contact" onClick={() => setCurrentPage('Contact')}>Contact</Nav.Link>
                 <Nav.Link href="#resume" onClick={() => setCurrentPage('Resume')}>Resume</Nav.Link>
             </Nav>
+            </Navbar.Collapse>
             </Container>
         </Navbar>
-
-
-        {/* <nav class="nav-links">
-            <ul>
-                <li>
-                    <a 
-                    href="#href" 
-                    onClick={() => setCurrentPage('About')}>
-                        About Me
-                    </a>
-                </li>
-                <li>
-                    <a 
-                    href="#portfolio" 
-                    onClick={() => setCurrentPage('Portfolio')}>
-                        Portfolio
-                    </a>
-                </li>
-                <li>
-                    <a 
-                    href="#contact"
-                    onClick={() => setCurrentPage('Contact')}>
-                        Contact
-                    </a>
-                </li>
-                <li>
-                    <a 
-                    href="#resume"
-                    onClick={() => setCurrentPage('Resume')}>
-                        Resume
-                    </a>
-                </li>
-            </ul>
-        </nav> */}
 
     </header>
     );

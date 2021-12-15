@@ -1,0 +1,8 @@
+.portfolio-img {
+  border: 2px solid black;
+  max-width: 100%;
+  width: 415px;
+  height: 235px;
+  margin-top: 20px;
+  margin-bottom: 15px;
+}

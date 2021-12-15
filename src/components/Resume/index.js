@@ -1,5 +1,7 @@
 import React from 'react';
 import Container from 'react-bootstrap/Container';
+import Iframe from 'react-iframe';
+import './style.css';
 
 function Resume() {
     return(
@@ -23,9 +25,22 @@ function Resume() {
                 <li>MySQL, Sequelize</li>
                 <li>MongoDB, Mongoose</li>
             </ul>
-        <h3>Resume:</h3>
+            
+
+            <h3 className="title">Resume</h3> 
+        <div className="resume">  
+            <Iframe 
+                url="https://docs.google.com/document/d/e/2PACX-1vTZM7p9aBTEDWSD9bKRul9xFFZ47vVJcytO1UB6Y3UG-Kaolf1eGUFZvj4u4NCFLA21MoVNT9yRbIaV/pub?embedded=true" 
+                width="780px"
+                height="800px"
+                className="resume-doc"
+                />
+        </div>
+
         </Container>
     );
 }
 
 export default Resume;
+
+{/* <iframe src="https://docs.google.com/document/d/e/2PACX-1vTZM7p9aBTEDWSD9bKRul9xFFZ47vVJcytO1UB6Y3UG-Kaolf1eGUFZvj4u4NCFLA21MoVNT9yRbIaV/pub?embedded=true"></iframe> */}
