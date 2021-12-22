@@ -24,6 +24,14 @@ function Portfolio() {
                 src={require(`../../assets/portfolio-photos/portfolio-${i}.PNG`).default}
             />
         </a>
+        <div className="description">
+            <div className="description-name">
+                {items.name}
+            </div>
+            <div className="description-github">
+                <a href={items.github} target="_blank">Github</a>
+            </div>
+        </div>
         </Col>
     ))}
   </Row>
