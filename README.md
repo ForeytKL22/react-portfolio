@@ -9,4 +9,12 @@
 ## References
 - Github: https://github.com/ForeytKL22/react-portfolio
 - Deployed application: https://foreytkl22.github.io/react-portfolio/
-- Screenshots:
+- Screenshots: 
+    ![Alt text](https://i.imgur.com/rUT6h2z.png "screenshot of portfolio profile page") 
+    ![Alt text](https://i.imgur.com/CfT9qNZ.png "screenshot of portfolio portfolio page")
+
+## Author(s) and contact information
+* Kristin Foreyt (me):
+    - krforeyt@gmail.com
+    - github: https://github.com/ForeytKL22
+    - linkedIn: https://www.linkedin.com/in/kristin-foreyt-79598b66/
