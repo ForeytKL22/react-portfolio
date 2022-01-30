@@ -24,4 +24,6 @@
 
 .description-name {
   font-family: 'Shizuru', cursive;
+  text-decoration: underline;
+  font-weight: bolder;
 }

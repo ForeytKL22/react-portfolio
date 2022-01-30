@@ -28,6 +28,12 @@ function Portfolio() {
             <div className="description-name">
                 {items.name}
             </div>
+
+            <div>
+                {items.description}
+            </div>
+            <br />
+
             <div className="description-github">
                 <a href={items.github} target="_blank">Github</a>
             </div>

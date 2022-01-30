@@ -30,7 +30,7 @@ function Resume() {
             <h3 className="title">Resume</h3> 
         <div className="resume">  
             <Iframe 
-                url="https://docs.google.com/document/d/e/2PACX-1vTZM7p9aBTEDWSD9bKRul9xFFZ47vVJcytO1UB6Y3UG-Kaolf1eGUFZvj4u4NCFLA21MoVNT9yRbIaV/pub?embedded=true" 
+                url="https://docs.google.com/document/d/e/2PACX-1vRSlLEELDi6ftHcjWBYhj-hxe9dQg2WDcQyZ3B77VEdkjFl_zibg_Znaw1xxYA8sMhzkIAPLD7lvYWa/pub?embedded=true" 
                 width="780px"
                 height="800px"
                 className="resume-doc"
