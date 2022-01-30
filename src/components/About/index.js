@@ -7,7 +7,7 @@ import Figure from 'react-bootstrap/Figure';
 function About() {
     return (
       <Container>
-          <h1>About Me</h1>
+          <h1>Kristin Foreyt</h1>
           <Figure>
             <Figure.Image
               width={171}
