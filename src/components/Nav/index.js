@@ -11,7 +11,7 @@ function Navigate({currentPage, setCurrentPage}) {
         <Container>
         <Navbar bg="dark" variant="dark" class="navbar" collapseOnSelect expand="lg">
             
-            <Navbar.Brand href="#home" className="name">My Portfolio</Navbar.Brand>
+            <Navbar.Brand href="#home" className="name">Kristin Foreyt</Navbar.Brand>
             <Navbar.Toggle aria-controls="responsive-navbar-nav" />
             <Navbar.Collapse id="responsive-navbar-nav">
             <Nav className="me-auto nav-links">
@@ -21,7 +21,7 @@ function Navigate({currentPage, setCurrentPage}) {
                 <Nav.Link href="#resume" onClick={() => setCurrentPage('Resume')}>Resume</Nav.Link>
             </Nav>
             </Navbar.Collapse>
-            
+             
         </Navbar>
         </Container>
     </header>
